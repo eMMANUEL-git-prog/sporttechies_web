@@ -174,8 +174,8 @@ export function ServicesContent() {
           Our Services
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-          From cutting-edge sports technology to enterprise software solutions,
-          we build systems that perform.
+          Engineering dependable systems for sports technology and enterprise
+          operations.
         </p>
       </div>
 
