@@ -1,4 +1,6 @@
-import { EarlyAccessForm } from "@/components/early-access-form"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -26,14 +28,18 @@ export function HeroSection() {
           perform, compete, and evolve.
         </p>
 
-        {/* Email form */}
-        <EarlyAccessForm />
-
-        {/* Social proof hint */}
-        <p className="mt-8 text-xs tracking-wide text-muted-foreground/60">
-          Invite only. Limited spots available.
-        </p>
+        {/* Services CTA */}
+        <Button
+          asChild
+          size="lg"
+          className="group gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
+        >
+          <Link href="/services">
+            Explore Our Services
+            <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </Button>
       </div>
     </section>
-  )
+  );
 }
